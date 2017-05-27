@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from "./app-routing.module";
 
 import { UserPermissionService } from 'my-lib/my-lib';
+import { PermissionService } from 'user-permissions/export';
 
 @NgModule({
 	declarations: [
