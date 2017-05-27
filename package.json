@@ -2,9 +2,10 @@
     "name": "proj",
     "version": "0.0.0",
     "license": "MIT",
+    "main": "index.js",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
+        "start": "ng serve --host pcbnu008774.interno.senior.com.br",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
@@ -22,6 +23,7 @@
         "@angular/platform-browser-dynamic": "^4.0.0",
         "@angular/router": "^4.0.0",
         "core-js": "^2.4.1",
+        "my-lib": "git+https://github.com/heltonandreazza/my-lib.git",
         "rxjs": "^5.1.0",
         "zone.js": "^0.8.4"
     },

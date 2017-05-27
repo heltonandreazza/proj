@@ -4,18 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MyLibService} from "my-lib/my-lib";
+import { AppRoutingModule } from "./app-routing.module";
+
+import { UserPermissionService } from 'my-lib/my-lib';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent
+	],
+	imports: [
+		AppRoutingModule,
+		BrowserModule,
+		FormsModule,
+		HttpModule
+	],
+	providers: [UserPermissionService],
+	bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
